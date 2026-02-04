@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image:
+  linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+  ),
+  url("./subway.jpg");
+
+}
+
+
+
