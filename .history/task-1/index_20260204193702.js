@@ -48,11 +48,13 @@ function saveCount() {
     countPeople.innerText = count
 }
 
-// let username = "Raghav"
-// let message = "you have three new notifications"
-// console.log(username + ", " + message + "!")
-
-// console.log(4 + 5)
-// console.log("2" + "4")
-// console.log("5" + 1)
-// console.log(100 + "100")
+let username = "Raghav"
+let message = "#increment-btn {
+    padding: 10px 20px;
+    font-size:10px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}"

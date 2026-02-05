@@ -1,0 +1,1 @@
+let welcomeElement = document.getElementById("welcome-")
