@@ -50,7 +50,7 @@ function saveCount() {
 }
 
 function savePreviousEntries() {
-    let countStr = ""
+    let countStr
     if(count >= 0) {
         countStr = count + " - "
     }

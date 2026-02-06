@@ -29,9 +29,9 @@
 // logLapTime()
 
 let countPeople = document.getElementById("people-count")
-let previousEntries = document.getElementById("previous-entries")
-let count = 0
+console.log(countPeople)
 
+let count = 0
 function incrementCount() {
     count += 1
     countPeople.innerText = count
@@ -44,20 +44,15 @@ function decrementCount() {
 
 function saveCount() {
     console.log(count)
-    savePreviousEntries()
     count = 0
     countPeople.innerText = count
+    savePreviousEntries
 }
 
 function savePreviousEntries() {
-    let countStr = ""
-    if(count >= 0) {
-        countStr = count + " - "
-    }
-    else {
-        countStr = "(" + count + ")" + " - "
-    }
-    previousEntries.textContent += countStr
+    let previousEntries = document.getElementById("previous-entries")
+    let countStr = count + " - "
+    previousEntries.innerText += countStr
 }
 
 // let username = "Raghav"

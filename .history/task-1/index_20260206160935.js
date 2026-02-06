@@ -50,13 +50,10 @@ function saveCount() {
 }
 
 function savePreviousEntries() {
-    let countStr = ""
     if(count >= 0) {
-        countStr = count + " - "
+        let countStr = count + " - "
     }
-    else {
-        countStr = "(" + count + ")" + " - "
-    }
+    else 
     previousEntries.textContent += countStr
 }
 
