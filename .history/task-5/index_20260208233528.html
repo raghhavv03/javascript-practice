@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BlackJack</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+            <h1>BlackJack</h1>
+            <p id="money">Money: $100</p>
+            <input id="initial-bet" type="number" placeholder="Enter bet amount" min="1">
+            <button id="start-game-button" onclick="startGame()">Start Game</button>
+            <p id="message">Place your bet and start</p>
+            <p id="sum">Sum: 0</p>
+            <div id="cards-container"></div>
+            <button id="hit-button" onclick="hit()">Hit</button>
+            <button id="stand-button" onclick="cashOut()">Cash Out</button>
+    </body>
+</html>
