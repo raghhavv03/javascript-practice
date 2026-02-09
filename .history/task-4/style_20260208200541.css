@@ -21,25 +21,9 @@ input {
     width: 100px;
     text-align: center;
     font-size: 20px;
-    border-radius: 5px;
 }
 
 button {
     padding: 10px 20px;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-button:hover {
-    background-color: #027308;
-}
-
-#sum-result{
-    font-size: 40px;
+    font-size: 20px;
 }

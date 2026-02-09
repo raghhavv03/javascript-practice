@@ -33,7 +33,6 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 button:hover {
@@ -41,5 +40,5 @@ button:hover {
 }
 
 #sum-result{
-    font-size: 40px;
+    
 }

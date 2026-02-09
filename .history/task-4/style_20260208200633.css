@@ -21,7 +21,7 @@ input {
     width: 100px;
     text-align: center;
     font-size: 20px;
-    border-radius: 5px;
+    bor
 }
 
 button {
@@ -33,13 +33,4 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-button:hover {
-    background-color: #027308;
-}
-
-#sum-result{
-    font-size: 40px;
 }
