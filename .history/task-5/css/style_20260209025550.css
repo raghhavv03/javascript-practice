@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(
+        circle at center,
+        #4b2e1e 0%,   
+        #3a2417 40%, 
+        #1f140c 100%  
+    );
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#heading {
+    font-size: 70px;
+    font-family: 'Unbounded', cursive;
+    color: #c4161c;
+    text-shadow: 
+        1px 1px 0 #ffd700,
+        2px 2px 0 #e6c24f,
+        3px 3px 0 #c9a227,
+        4px 4px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+}
+
+#money-input {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#add-money-btn {
+    background: linear-gradient(180deg, #f5d76e, #c9a227);
+    color: #2b1b11;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    box-shadow:
+        0 4px 0 #9f7f18,          
+        0 8px 15px rgba(0,0,0,0.4);
+    transition: all 0.2s ease;
+}
+
+#add-money-btn:hover {
+    background: linear-gradient(180deg, #ffe58f, #e6c24f);
+    box-shadow:
+        0 4px 0 #9f7f18,
+        0 0 12px rgba(255, 215, 0, 0.8),
+        0 10px 20px rgba(0,0,0,0.5);
+    transform: translateY(-1px);
+}
+
+#add-money-btn:active {
+    transform: translateY(2px);
+    box-shadow:
+        0 2px 0 #9f7f18,
+        0 4px 8px rgba(0,0,0,0.4);
+}
+
+#index-error-msg {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ff4d4d;
+    font-weight: bolder;
+}
+
+#user-balance {
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    color: #c4161c;
+    text-shadow: 
+        1px 1px 0 #ffd700,
+        2px 2px 0 #e6c24f,
+        3px 3px 0 #c9a227,
+        4px 4px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+}
+
+#bet-input {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#start-game-btn {
+    background: linear-gradient(180deg, #f5d76e, #c9a227);
+    color: #2b1b11;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    box-shadow:
+        0 4px 0 #9f7f18,          
+        0 8px 15px rgba(0,0,0,0.4);
+    transition: all 0.2s ease;
+}
+
+#start-game-btn:hover {
+    background: linear-gradient(180deg, #ffe58f, #e6c24f);
+    box-shadow:
+        0 4px 0 #9f7f18,
+        0 0 12px rgba(255, 215, 0, 0.8),
+        0 10px 20px rgba(0,0,0,0.5);
+    transform: translateY(-1px);
+}
+
+#start-game-btn:active {
+    transform: translateY(2px);
+    box-shadow:
+        0 2px 0 #9f7f18,
+        0 4px 8px rgba(0,0,0,0.4);
+}
+
+#bet-error-msg {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ff4d4d;
+    font-weight: bolder;
+}
+
+#user-bet {
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    color: #c4161c;
+    text-shadow: 
+        1px 1px 0 #ffd700,
+        2px 2px 0 #e6c24f,
+        3px 3px 0 #c9a227,
+        4px 4px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+}
+
+#user-sum {
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    color: #c4161c;
+    text-shadow: 
+        1px 1px 0 #ffd700,
+        2px 2px 0 #e6c24f,
+        3px 3px 0 #c9a227,
+        4px 4px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

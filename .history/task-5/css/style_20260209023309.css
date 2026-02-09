@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: radial-gradient(
+        circle at center,
+        #4b2e1e 0%,   
+        #3a2417 40%, 
+        #1f140c 100%  
+    );
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#heading {
+    font-size: 80px;
+f   ont-family: 'Unbounded', cursive;
+    color: #c4161c;
+    text-shadow: 
+        1px 1px 0 #ffd700,
+        2px 2px 0 #e6c24f,
+        3px 3px 0 #c9a227,
+        4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+#money-input {
+    font-size: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

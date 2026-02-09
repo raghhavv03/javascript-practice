@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    ga
+    align-items: center;
+    background-color: gold;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
