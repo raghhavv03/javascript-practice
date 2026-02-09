@@ -1,17 +1,14 @@
 const bet = Number(localStorage.getItem("bet"))
 document.getElementById("bet").textContent = bet
-const cashoutBtn = document.getElementById("cashout-btn")
-cashoutBtn.disabled = true
 
 let sum = 0
-let cardsDrawn = 0
 
 const sumEl = document.getElementById("sum")
 const cardsEl = document.getElementById("cards")
 const resultEl = document.getElementById("result")
 
 const cards = [
-    { value: 1, image: "images/card-a.png" },
+    { value: 1, image: "images/card-a.png" }
     { value: 2, image: "images/card-2.png" },
     { value: 3, image: "images/card-3.png" },
     { value: 4, image: "images/card-4.png" },
@@ -23,20 +20,15 @@ const cards = [
     { value: 10, image: "images/card-10.png" },
     { value: 10, image: "images/card-j.png" },
     { value: 10, image: "images/card-q.png" },
-    { value: 10, image: "images/card-k.png" }
+    { value: 10, image: "images/card-k.png" },
 ]
 
 function drawCard() {
     const randomIndex = Math.floor(Math.random() * cards.length)
     const card = cards[randomIndex]
 
-    cardsDrawn++
     sum += card.value
     sumEl.textContent = sum
-
-    if (cardsDrawn >= 2) {
-        cashoutBtn.disabled = false;
-    }
 
     const img = document.createElement("img")
     img.src = card.image

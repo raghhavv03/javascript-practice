@@ -4,7 +4,7 @@ const cashoutBtn = document.getElementById("cashout-btn")
 cashoutBtn.disabled = true
 
 let sum = 0
-let cardsDrawn = 0
+let cardsDrawn = 1
 
 const sumEl = document.getElementById("sum")
 const cardsEl = document.getElementById("cards")
@@ -37,6 +37,7 @@ function drawCard() {
     if (cardsDrawn >= 2) {
         cashoutBtn.disabled = false;
     }
+
 
     const img = document.createElement("img")
     img.src = card.image
