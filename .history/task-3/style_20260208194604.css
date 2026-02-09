@@ -28,25 +28,10 @@ p {
 button {
     padding: 10px 20px;
     font-size:15px;
-    font-weight: bold;
     border: none;
     border-radius: 10px;
     background-color: gray;
     color: white;
     cursor: pointer;
-    margin-bottom: 20px;
 }
-
-button:hover {
-    background-color: black;
-}
-
-#error-message {
-    color: red;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-
-
 
