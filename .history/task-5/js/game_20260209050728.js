@@ -36,7 +36,7 @@ function drawCard() {
     sum += card.value
     sumEl.textContent = sum
 
-    if (cardsDrawn > 2) {
+    if (cardsDrawn >+ 2) {
         cashoutBtn.disabled = false;
     }
 
