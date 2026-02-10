@@ -64,6 +64,7 @@ function drawCard() {
     if (sum === 21) {
         const multiplier = 1 + Math.pow(sum / 21, 2)
         const winnings = Math.floor(bet * multiplier)
+
         resultEl.textContent = `BlackJack 🎉! You won $${winnings} (x${multiplier.toFixed(2)})`
         disableButtons()
     }

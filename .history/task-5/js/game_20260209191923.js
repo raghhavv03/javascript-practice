@@ -5,7 +5,7 @@ cashoutBtn.disabled = true
 
 let sum = 0
 let cardsDrawn = 0
-let aceCount = 0
+    let aceCount = 0
 
 const sumEl = document.getElementById("sum")
 const cardsEl = document.getElementById("cards")
@@ -39,13 +39,12 @@ function drawCard() {
 
     cardsDrawn++
     sum += card.value
+    sumEl.textContent = sum
 
     while (sum > 21 && aceCount > 0) {
         sum -= 10
         aceCount--
     }
-
-    sumEl.textContent = sum
 
     if (cardsDrawn > 2) {
         cashoutBtn.disabled = false;
@@ -54,6 +53,7 @@ function drawCard() {
     const img = document.createElement("img")
     img.src = card.image
     img.classList.add("card-img")
+
     cardsEl.appendChild(img)
 
     if (sum > 21) {
@@ -64,6 +64,7 @@ function drawCard() {
     if (sum === 21) {
         const multiplier = 1 + Math.pow(sum / 21, 2)
         const winnings = Math.floor(bet * multiplier)
+
         resultEl.textContent = `BlackJack 🎉! You won $${winnings} (x${multiplier.toFixed(2)})`
         disableButtons()
     }

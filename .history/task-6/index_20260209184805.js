@@ -1,0 +1,1 @@
+let sentence = ["hello", ", ", "my ", "name ", "is ", "Raghav", "."]
