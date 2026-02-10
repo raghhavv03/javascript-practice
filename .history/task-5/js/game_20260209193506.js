@@ -80,7 +80,7 @@ document.getElementById("cashout-btn").addEventListener("click", function() {
     if (sum >= 21) return
 
     const risk = sum / 21
-    const multiplier = Math.min(2, 1 + Math.pow(risk, 4))
+    const multiplier = 1 + Math.pow(risk, 4)
     const winnings = Math.floor(bet * multiplier)
 
     resultEl.textContent = `You won $${winnings} (x${multiplier.toFixed(2)})`

@@ -47,7 +47,7 @@ function drawCard() {
 
     sumEl.textContent = sum
 
-    if (cardsDrawn >= 2) {
+    if (cardsDrawn > 2) {
         cashoutBtn.disabled = false;
     }
 
@@ -62,8 +62,7 @@ function drawCard() {
     }
 
     if (sum === 21) {
-        const risk = sum / 21
-        const multiplier = Math.min(2, 1 + Math.pow(risk, 4))
+        const multiplier = 1 + Math.pow(sum / 21, 2)
         const winnings = Math.floor(bet * multiplier)
         resultEl.textContent = `BlackJack 🎉! You won $${winnings} (x${multiplier.toFixed(2)})`
         disableButtons()
@@ -72,15 +71,13 @@ function drawCard() {
 
 window.onload = function () {
     drawCard()
+    drawCard()
 }
 
 document.getElementById("hit-btn").addEventListener("click", drawCard)
 
 document.getElementById("cashout-btn").addEventListener("click", function() {
-    if (sum >= 21) return
-
-    const risk = sum / 21
-    const multiplier = Math.min(2, 1 + Math.pow(risk, 4))
+    const multiplier = 1 + Math.pow(risk, 4)
     const winnings = Math.floor(bet * multiplier)
 
     resultEl.textContent = `You won $${winnings} (x${multiplier.toFixed(2)})`
