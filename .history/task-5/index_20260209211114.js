@@ -41,29 +41,5 @@ function renderGame() {
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " "
     }
-
-    sumEl.textContent = "Sum: " + sum
-
-    if (sum < 21) {
-        message = "Do you want to draw a new card?"
-    } else if (sum === 21) {
-        message = "BlackJack 🎉!"
-        hasBlackJack = true
-    } else {
-        message = "You Lose 😢"
-        isAlive = false
-    }
-
-    messageEl.textContent = message
 }
-
-function newCard() {
-    if (isAlive === true && hasBlackJack === false) {
-        let card = getRandomCard()
-        sum += card
-        cards.push(card)
-        renderGame()
-    }
-}
-
 

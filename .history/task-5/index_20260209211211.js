@@ -47,10 +47,10 @@ function renderGame() {
     if (sum < 21) {
         message = "Do you want to draw a new card?"
     } else if (sum === 21) {
-        message = "BlackJack 🎉!"
+        message = "Wohoo! You've got Blackjack!"
         hasBlackJack = true
     } else {
-        message = "You Lose 😢"
+        message = "You're out of the game!"
         isAlive = false
     }
 
@@ -58,12 +58,4 @@ function renderGame() {
 }
 
 function newCard() {
-    if (isAlive === true && hasBlackJack === false) {
-        let card = getRandomCard()
-        sum += card
-        cards.push(card)
-        renderGame()
-    }
-}
-
 
