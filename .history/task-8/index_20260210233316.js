@@ -17,22 +17,11 @@
 //     console.log("- " + largeCountries[i])
 // }
 
-// let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
 
-// largeCountries.pop()
-// largeCountries.push("Pakistan")
-// largeCountries.shift()
-// largeCountries.unshift("China")
+largeCountries.pop()
+largeCountries.push("Pakistan")
+largeCountries.shift()
+largeCountries.unshift("China")
 
-// console.log(largeCountries)
-
-// let hands = ["rock", "paper", "scissors"]
-
-// function randomHand() {
-//     let randomIndex = Math.floor(Math.random() * 3)
-//     return hands[randomIndex]
-// }
-
-// console.log(randomHand())
-
-
+console.log(largeCountries)
