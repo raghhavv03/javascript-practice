@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: wheat
+}
+
+#apple-shelf {
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(254, 113, 89);
+}
+
+#orange-shelf {
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(255, 193, 79);
+}

@@ -35,7 +35,7 @@
 
 // console.log(randomHand())
 
-let fruits = ["🍎", "🍊", "🍎", "🍊", "🍎", "🍊"]
+let fruits = ["🍎", "🍊", "🍎", "🍊", "🍎", "🍊", "🍎", "🍊"]
 let appleShelf = document.getElementById("apple-shelf")
 let orangeShelf = document.getElementById("orange-shelf")
 

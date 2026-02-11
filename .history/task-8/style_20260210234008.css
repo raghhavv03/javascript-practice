@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: wheat
+}
+
+#apple-shelf {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(254, 113, 89);
+}
+
+#orange-shelf {
+    display: flex;
+    gap: 20px;
+    background-color: ora;
+}
